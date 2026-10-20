@@ -1,0 +1,8 @@
+# Secret scanning rules (used locally and by .github/workflows/secret-scan.yml).
+# Run locally before committing:  gitleaks dir . --redact
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Known false positives"
+paths = ['''\.example$''']
